@@ -41,8 +41,6 @@ function evenOddScan(number) {
 }
 
 
-
-
 // attivare il bottone e registrare i dati 
 
 button.addEventListener('click', function() {
@@ -79,8 +77,6 @@ button.addEventListener('click', function() {
     }
 
 
-
-
     //stampa in pagina
 
     yourNumberPrint.innerHTML = 'il tuo numero è: ' + userNumberValue;
@@ -88,9 +84,5 @@ button.addEventListener('click', function() {
     yourevenOddChoice.innerHTML = ' hai scelto :' + evenOddValue;
     sumPrint.innerHTML = 'La somma dei due numeri genera un numero: ' + evenOddOfSum;
     winnerPrint.innerHTML = winner;
-
-
-
-
 
 })
