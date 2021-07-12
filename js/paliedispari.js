@@ -43,8 +43,6 @@ function evenOddScan(number) {
 
 
 
-
-
 // attivare il bottone e registrare i dati 
 
 button.addEventListener('click', function() {
@@ -62,26 +60,28 @@ button.addEventListener('click', function() {
     //stabilire se finalNumber è pari o dispari
 
     var evenOddOfSum = evenOddScan(finalNumber);
+    console.log(evenOddOfSum);
 
+    if (evenOddOfSum === true) {
+        evenOddOfSum = 'even';
+
+    } else {
+        evenOddOfSum = 'odd';
+    }
 
     // annuncia il vincitore
     var winner = '';
 
-    if (evenOddOfSum === true) {
-        evenOddOfSum = 'even';
+    if (evenOddOfSum == evenOddValue) {
         winner = 'Hai vinto';
     } else {
-        evenOddOfSum = 'odd';
-        winner = 'La cpu ha vinto';
+        winner = 'Hai perso';
     }
 
-    //stampa in pagina
 
-    // var yourNumberPrint = document.getElementById('your-number');
-    // var yourevenOddChoice = document.getElementById('your-choice');
-    // var cpuNumberPrint = document.getElementById('cpu-number');
-    // var sumPrint = document.getElementById('sum');
-    // var winnerPrint = document.getElementById('winner');
+
+
+    //stampa in pagina
 
     yourNumberPrint.innerHTML = 'il tuo numero è: ' + userNumberValue;
     cpuNumberPrint.innerHTML = ' il numero della cpu è: ' + cpuResult;
